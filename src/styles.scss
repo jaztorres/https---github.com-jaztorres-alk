@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+// Fuentes Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Fuentes locales
+@font-face {
+    font-family: 'miso';
+    src: url('./assets/css/fonts/miso-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'miso-bold';
+    src: url('./assets/css/fonts/miso-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Variables fuentes
+$fuentePrincipal: 'miso', sans-serif;
+$fuenteDestacada: 'miso-bold', sans-serif;
+$fuenteGeneral: 'Roboto', sans-serif;
+//Variables paleta de colores
+$colorGris: #EBEBEB;
+$colorNegro: #070707;
+$colorNegroFondo: #060606;
+$colorAzulAqua: #329ca3;
+$colorTurquesa: #35b7ad;
+$colorclaro: #48b0d9;
+$colormedio:#4282c2;
+$colormorado:#39336f;
+$colorMoradoOsc:#51358c;
+
+$blueDegrade: linear-gradient( to bottom, #2b1037,#534dc2,#3eaec5);
+$moradoDegrade: linear-gradient( to top, #32b6ae,#4192a1,#604686);
+$grayDegrade: linear-gradient( to bottom, #f2f2f2,#ffffff);
+
+// Generales
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $fuentePrincipal;
+    font-size: 16px;
+    background-color: $grayDegrade;
+}
+.title1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: $fuenteDestacada;
+    color: #329ca3;
+    h1{
+        font-size: 25px;
+        text-align: center;
+        line-height: 1.0;
+        padding: 0px 20px 0px 20px;
+    }
+}
+.title2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: $fuenteDestacada;
+    color: #ffffff;
+    h2{
+       
+        font-size: 25px;
+        text-align: center;
+        line-height: 1.0;
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+.title3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: $fuenteDestacada;
+    color: #442559;
+    h3{
+    
+        font-size: 25px;
+        text-align: center;
+        line-height: 1.0;
+        padding: 0px 20px 0px 20px;
+    }
+}
+.flex-center{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-bold{
+    color:$colorAzulAqua;
+    font-family: $fuenteGeneral;
+    font-weight: bold;
+    font-size: 14px;
+}
+
