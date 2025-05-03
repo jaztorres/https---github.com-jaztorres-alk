@@ -102,3 +102,53 @@ body{
     font-size: 14px;
 }
 
+// Otros estilos
+.circulo-inciso {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.circulo-numero{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.contenido-inciso {
+  margin-left: 1rem;
+}
+
+.recuadro-formulario {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.recuadro-login {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.recuadro-pop-up{
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.texto-inciso{
+    text-align: left;
+}
