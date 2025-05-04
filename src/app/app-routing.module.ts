@@ -11,6 +11,7 @@ import { GanadoresComponent } from './sections/ganadores/ganadores.component';
 
 const routes: Routes = [
   { path: '', component: HeroComponent }, // Ruta inicial (Hero)
+
   { path: 'mecanica', component: MecanicaComponent },
   { path: 'memorama', component: MemoramaComponent },
   { path: 'participacion', component: ParticipacionComponent },

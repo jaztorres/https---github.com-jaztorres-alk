@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -12,5 +13,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'alk-def';
+  title = 'alk-def- 1';
 }

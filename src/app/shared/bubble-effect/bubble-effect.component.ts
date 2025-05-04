@@ -1,6 +1,7 @@
 import { Component, ElementRef, Input, OnInit, } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {gsap} from 'gsap';
+import { RouterModule } from '@angular/router';
 
 
 interface Bubble {
@@ -14,7 +15,7 @@ interface Bubble {
 @Component({
   selector: 'app-bubble-effect',
   standalone: true,
-  imports: [ CommonModule],
+  imports: [ CommonModule, RouterModule],
   templateUrl: './bubble-effect.component.html',
   styleUrl: './bubble-effect.component.scss'
 })
