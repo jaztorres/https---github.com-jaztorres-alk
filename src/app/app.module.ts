@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./layout/header/header.component";
 import { HeroComponent } from "./sections/hero/hero.component";
@@ -13,16 +14,11 @@ import { PremiosComponent } from "./sections/premios/premios.component";
 import { FooterComponent } from "./layout/footer/footer.component";
 import {BubbleEffectComponent} from "./shared/bubble-effect/bubble-effect.component"
 
+
 @NgModule({
     declarations: [
         AppComponent,
-        //HeaderComponent,
-        //HeroComponent,
-        //GanadoresComponent,
-        //MecanicaComponent,
-        //MemoramaComponent,
-        //ParticipacionComponent,
-        //PremiosComponent,
+
 
 
 
@@ -40,7 +36,8 @@ import {BubbleEffectComponent} from "./shared/bubble-effect/bubble-effect.compon
         ParticipacionComponent,
         PremiosComponent,
         HeaderComponent,
-        BubbleEffectComponent
+        BubbleEffectComponent,
+        
 
     ],
     bootstrap: [AppComponent]
