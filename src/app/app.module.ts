@@ -17,7 +17,7 @@ import {BubbleEffectComponent} from "./shared/bubble-effect/bubble-effect.compon
 
 @NgModule({
     declarations: [
-        AppComponent,
+       
 
 
 
@@ -40,6 +40,6 @@ import {BubbleEffectComponent} from "./shared/bubble-effect/bubble-effect.compon
         
 
     ],
-    bootstrap: [AppComponent]
+    bootstrap: []
 })
 export class AppModule {}
