@@ -1,5 +1,7 @@
 import { Component, ElementRef, Input, OnInit, } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import {gsap} from 'gsap';
+
 
 interface Bubble {
   x:number;
@@ -11,8 +13,8 @@ interface Bubble {
 
 @Component({
   selector: 'app-bubble-effect',
-  //standalone: true,
-  //imports: [],
+  standalone: true,
+  imports: [ CommonModule],
   templateUrl: './bubble-effect.component.html',
   styleUrl: './bubble-effect.component.scss'
 })

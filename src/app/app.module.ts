@@ -11,18 +11,19 @@ import { MemoramaComponent } from "./sections/memorama/memorama.component";
 import { ParticipacionComponent } from "./sections/participacion/participacion.component";
 import { PremiosComponent } from "./sections/premios/premios.component";
 import { FooterComponent } from "./layout/footer/footer.component";
+import {BubbleEffectComponent} from "./shared/bubble-effect/bubble-effect.component"
 
 @NgModule({
     declarations: [
         AppComponent,
-        HeaderComponent,
-        HeroComponent,
-        GanadoresComponent,
-        MecanicaComponent,
-        MemoramaComponent,
-        ParticipacionComponent,
-        PremiosComponent,
-        FooterComponent,
+        //HeaderComponent,
+        //HeroComponent,
+        //GanadoresComponent,
+        //MecanicaComponent,
+        //MemoramaComponent,
+        //ParticipacionComponent,
+        //PremiosComponent,
+
 
 
     ],
@@ -31,7 +32,16 @@ import { FooterComponent } from "./layout/footer/footer.component";
         FormsModule,
         ReactiveFormsModule,
         BrowserAnimationsModule,
-        
+        FooterComponent,
+        GanadoresComponent,
+        HeroComponent,
+        MecanicaComponent,
+        MemoramaComponent, 
+        ParticipacionComponent,
+        PremiosComponent,
+        HeaderComponent,
+        BubbleEffectComponent
+
     ],
     bootstrap: [AppComponent]
 })

@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef, OnDestroy, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { gsap } from 'gsap';
 
 interface Droplet {
@@ -11,6 +12,8 @@ interface Droplet {
 
 @Component({
   selector: 'app-droplet-effect',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './droplet-effect.component.html',
   styleUrls: ['./droplet-effect.component.scss']
 })
