@@ -1,9 +1,10 @@
+<!--
 <section class="mecanica">
   <h1>Mecánica</h1>
   <div class="steps">
     <div class="step">
       <span class="circle a">A</span>
-      <img src="/images/registro-datos.svg" alt="Registra" />
+      <img src="/" alt="Registra" />
       <p>Registra tus datos.</p>
     </div>
     <div class="step">
@@ -15,6 +16,28 @@
       <span class="circle c">C</span>
       <img src="/images/mec-paticipa.png" alt="Participa" />
       <p>Participa obtén una bocina inteligente.</p>
+    </div>
+  </div>
+</section>-->
+
+
+
+<section class="mecanica-section">
+  <!--<app-drops-effect [count]="25" [color]="'rgba(100, 100, 100, 0.15)'"></app-drops-effect>-->
+  
+  <div class="container">
+    <h2 class="section-title">Mecánica</h2>
+    
+    <div class="steps-container">
+      <div class="step" *ngFor="let step of steps">
+        <div class="step-circle" [ngClass]="step.color">
+          <span>{{ step.letter }}</span>
+        </div>
+        <div class="step-image">
+          <img [src]="step.image" [alt]="'Paso ' + step.letter">
+        </div>
+        <p class="step-text" [ngClass]="step.color">{{ step.text }}</p>
+      </div>
     </div>
   </div>
 </section>

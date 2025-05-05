@@ -1,4 +1,4 @@
-.participacion {
+/*.participacion {
     background: linear-gradient(to right, aqua, purple);
     padding: 20px;
   }
@@ -6,4 +6,33 @@
   .form-container { background: white; border-radius: 10px; padding: 10px; }
   h2 { color: purple; }
   label { color: aqua; }
-  button { background: aqua; color: white; border-radius: 10px; }
+  button { background: aqua; color: white; border-radius: 10px; }*/
+
+// participacion-section.component.scss
+.participacion-section {
+  position: relative;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #00bcd4 0%, #8e44ad 100%);
+  overflow: hidden;
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .forms-container {
+    display: flex;
+    justify-content:center;
+  }
+}

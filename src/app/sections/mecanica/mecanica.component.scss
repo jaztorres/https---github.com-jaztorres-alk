@@ -1,14 +1,107 @@
-.mecanica {
-    background: lightgray;
-    padding: 20px;
+// mecanica-section.component.scss
+.mecanica-section {
+  position: relative;
+  padding: 80px 0;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
     position: relative;
+    z-index: 1;
   }
-  h1 { color: aqua; text-align: center; }
-  .steps { display: flex; gap: 20px; }
-  .step { text-align: center; }
-  .circle { display: inline-block; width: 30px; height: 30px; border-radius: 50%; color: white; line-height: 30px; }
-  .a { background: blue; }
-  .b { background: darkpurple; }
-  .c { background: lightblue; }
-  p { color: inherit; }
-  .mecanica::after { /* Efecto gotas similar a Hero */ }
+  
+  .section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #3498db;
+    font-weight: 700;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+      margin-bottom: 30px;
+      
+      .step-circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        
+        &.blue {
+          background-color: #3498db;
+          span {
+            color: white;
+          }
+        }
+        
+        &.purple {
+          background-color: #8e44ad;
+          span {
+            color: white;
+          }
+        }
+        
+        &.light-blue {
+          background-color: #00bcd4;
+          span {
+            color: white;
+          }
+        }
+      }
+      
+      .step-image {
+        margin-bottom: 15px;
+        img {
+          max-width: 100%;
+          height: auto;
+          //border-radius: 10px;
+          //box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+      }
+      
+      .step-text {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        
+        &.blue {
+          color: #3498db;
+        }
+        
+        &.purple {
+          color: #8e44ad;
+        }
+        
+        &.light-blue {
+          color: #00bcd4;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mecanica-section {
+    .steps-container {
+      .step {
+        width: 100%;
+      }
+    }
+  }
+}
