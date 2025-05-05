@@ -18,5 +18,5 @@ import { PremiosComponent } from "./sections/premios/premios.component";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'alk-def- 1';
+  title = 'Alk-Def-2025';
 }
