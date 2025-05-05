@@ -14,7 +14,7 @@ import { FooterComponent } from "./layout/footer/footer.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-import {BubbleEffectComponent} from "./shared/bubble-effect/bubble-effect.component"
+import {BubbleEffectComponent} from "./shared/bubble-effect/bubble-effect.component";
 
 
 @NgModule({

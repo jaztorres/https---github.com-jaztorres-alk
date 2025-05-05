@@ -1,0 +1,99 @@
+.premios-section {
+    position: relative;
+    padding: 80px 0;
+    background-color: white;
+    overflow: hidden;
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      padding: 0 20px;
+    }
+    
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 50px;
+      color: #8e44ad;
+      font-weight: 700;
+    }
+    
+    .prizes-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 40px;
+      
+      .prize-card {
+        background-color: white;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: calc(33.333% - 20px);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .prize-image {
+          height: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 20px;
+          
+          img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+          }
+        }
+        
+        h3 {
+          color: #00bcd4;
+          font-size: 22px;
+          margin-bottom: 15px;
+          font-weight: 600;
+        }
+        
+        p {
+          color: #666;
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+    }
+    
+    .note {
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      font-style: italic;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .premios-section {
+      .prizes-container {
+        .prize-card {
+          width: calc(50% - 15px);
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .premios-section {
+      .prizes-container {
+        .prize-card {
+          width: 100%;
+        }
+      }
+    }
+  }

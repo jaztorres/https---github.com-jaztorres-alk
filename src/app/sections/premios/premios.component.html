@@ -1,1 +1,22 @@
 <p>premios works!</p>
+<section class="premios-section">
+    <app-bubble-effect [count]="25" [color]="'rgba(255, 255, 255, 0.4)'"></app-bubble-effect>
+    
+    <div class="container">
+      <h2 class="section-title">Premios</h2>
+      
+      <div class="prizes-container">
+        <div class="prize-card" *ngFor="let prize of prizes">
+          <div class="prize-image">
+            <img [src]="prize.imageUrl" [alt]="prize.name">
+          </div>
+          <h3>{{ prize.name }}</h3>
+          <p>{{ prize.description }}</p>
+        </div>
+      </div>
+      
+      <div class="note">
+        <p>* Premios sujetos a disponibilidad. Aplican términos y condiciones.</p>
+      </div>
+    </div>
+  </section>
