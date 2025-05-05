@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import {BubbleEffectComponent} from "./shared/bubble-effect/bubble-effect.component";
+import { DropletEffectComponent } from "./shared/droplet-effect/droplet-effect.component";
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import {BubbleEffectComponent} from "./shared/bubble-effect/bubble-effect.compon
         PremiosComponent,
         HeaderComponent,
         BubbleEffectComponent,
+        DropletEffectComponent
         
 
     ],

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { BubbleEffectComponent } from "../../shared/bubble-effect/bubble-effect.component";
+import { DropletEffectComponent } from '../../shared/droplet-effect/droplet-effect.component';
+
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule, RouterModule, BubbleEffectComponent],
+  imports: [CommonModule, RouterModule, DropletEffectComponent],
   templateUrl: './hero.component.html',
   styleUrls: [ './hero.component.scss']
 })

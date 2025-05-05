@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { BubbleEffectComponent } from "../../shared/bubble-effect/bubble-effect.component";
+
 
 @Component({
   selector: 'app-premios',
   standalone: true,
-  imports: [CommonModule, RouterModule, BubbleEffectComponent],
+  imports: [CommonModule, RouterModule],
   templateUrl: './premios.component.html',
   styleUrls: ['./premios.component.scss']
 })
