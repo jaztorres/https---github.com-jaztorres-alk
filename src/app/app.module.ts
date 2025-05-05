@@ -19,6 +19,7 @@ import {BubbleEffectComponent} from "./shared/bubble-effect/bubble-effect.compon
 
 @NgModule({
     declarations: [
+    
 
     ],
     imports: [

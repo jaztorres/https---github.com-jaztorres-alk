@@ -1,0 +1,14 @@
+.mecanica {
+    background: lightgray;
+    padding: 20px;
+    position: relative;
+  }
+  h1 { color: aqua; text-align: center; }
+  .steps { display: flex; gap: 20px; }
+  .step { text-align: center; }
+  .circle { display: inline-block; width: 30px; height: 30px; border-radius: 50%; color: white; line-height: 30px; }
+  .a { background: blue; }
+  .b { background: darkpurple; }
+  .c { background: lightblue; }
+  p { color: inherit; }
+  .mecanica::after { /* Efecto gotas similar a Hero */ }

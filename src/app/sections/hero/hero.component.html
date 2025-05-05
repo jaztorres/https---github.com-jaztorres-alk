@@ -1,10 +1,54 @@
+<!--
 <p>hero works!</p>
-<section class="hero-section">
+<body>
+    <div class="bubble-container" id="bubbleContainer"></div>
+  
+    <script>
+      const container = document.getElementById('bubbleContainer');
+  
+      function createBubble() {
+        const bubble = document.createElement('div');
+        bubble.classList.add('bubble');
+  
+        // Tamaño aleatorio entre 10px y 50px
+        const size = Math.random() * 40 + 10;
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+  
+        // Posición horizontal aleatoria
+        bubble.style.left = `${Math.random() * 100}vw`;
+  
+        // Duración de la animación entre 5s y 12s
+        const duration = Math.random() * 7 + 5;
+        bubble.style.animationDuration = `${duration}s`;
+  
+        // Movimiento lateral (sway) entre -100px y 100px
+        const sway = (Math.random() - 0.5) * 200;
+        bubble.style.setProperty('--sway', sway);
+  
+        // Escala inicial para un efecto de profundidad
+        bubble.style.transform = `scale(${Math.random() * 0.5 + 0.5})`;
+  
+        container.appendChild(bubble);
+  
+        // Eliminar burbuja al final de la animación
+        bubble.addEventListener('animationend', () => {
+          bubble.remove();
+        });
+      }
+  
+      // Crear burbujas cada 300ms
+      setInterval(createBubble, 300);
+  
+      // Crear algunas burbujas iniciales para llenar la pantalla
+      for (let i = 0; i < 10; i++) {
+        setTimeout(createBubble, i * 100);
+      }
+    </script>
+  </body>-->
 
-    <div class="container">
-        <div class="hero-content">
-            <app-bubble-effect></app-bubble-effect>
-            <img src="./assets/images/hero-image.png" alt="Imagen promocional" class="hero-image">
-        </div>
+    <div class="hero">
+       
+            <img src="./assets/images/hero-image.png" alt="Imagen promocional">
+       
     </div>
-</section>
