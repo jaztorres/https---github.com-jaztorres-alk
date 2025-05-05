@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef, OnDestroy, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { gsap } from 'gsap';
+
 import { RouterModule } from '@angular/router';
 
 interface Droplet {
