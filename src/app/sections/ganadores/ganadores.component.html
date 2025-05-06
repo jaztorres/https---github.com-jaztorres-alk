@@ -1,1 +1,32 @@
-<p>ganadores works!</p>
+
+<section class="ganadores-section">
+   <!-- <app-bubbles-effect [count]="20" [color]="'rgba(255, 255, 255, 0.3)'"></app-bubbles-effect>-->
+    
+    <div class="container">
+      <h2 class="section-title">Ganadores</h2>
+      
+      <div class="winners-card">
+        <table class="winners-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Premio</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let winner of winners">
+              <td>{{ winner.name }}</td>
+              <td>{{ winner.prize }}</td>
+              <td>{{ winner.date }}</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="no-winners" *ngIf="winners.length === 0">
+          <p>Muy pronto publicaremos a los primeros ganadores.</p>
+          <p>¡Participa para tener la oportunidad de ganar!</p>
+        </div>
+      </div>
+    </div>
+  </section>

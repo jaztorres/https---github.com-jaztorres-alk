@@ -1,1 +1,18 @@
-<p>footer works!</p>
+
+<footer class="footer">
+    <div class="container">
+      <div class="logo">
+        <img src="/images/alk-def-logo.png" alt="Logo">
+      </div>
+      
+      <div class="links">
+        <button class="footer-link" (click)="openBases()">Bases</button>
+        <button class="footer-link" (click)="openAviso()">Aviso</button>
+        <button class="footer-link" (click)="openContacto()">Contacto</button>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>© {{ currentYear }} Todos los derechos reservados. Promoción válida del 01/04/2025 al 30/06/2025</p>
+    </div>
+  </footer>
