@@ -7,7 +7,7 @@ import { DropletEffectComponent } from '../../shared/droplet-effect/droplet-effe
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [CommonModule, RouterModule, DropletEffectComponent],
+  imports: [CommonModule, RouterModule],
   templateUrl: './hero.component.html',
   styleUrls: [ './hero.component.scss']
 })
